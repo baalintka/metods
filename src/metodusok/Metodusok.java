@@ -15,8 +15,12 @@ public class Metodusok {
         osszeg = osszead(szam1, szam2);
         kiír("%d + %d = %d\n".formatted(szam1,szam2,osszeg));
         
-        
-        
+        int mszam1=2;
+        int mszam2=2;
+        int mszam3=3;
+        int mszam4=4;
+        osszeg4szamnak=osszead(mszam1, mszam2,mszam3,mszam4);
+        kiír(t"%d + %d + %d +%d = %d\n");
     }
     
     private static int elso10szamOsszege() {
@@ -28,8 +32,8 @@ public class Metodusok {
         
     }
     
-        private static int osszead(int a, int b){
-            return a+b;
+        private static int osszead(int a, int b, int c, int d){
+            return a+b+c+d;
     }
 
     private static void kiír(String kimenet) {
