@@ -11,16 +11,18 @@ public class Metodusok {
         String kimenet = "Az első 10 szám összege:" + osszeg + "\n";
         kiír(kimenet);
         
-        int szam1=7, szam2 = 4;
-        osszeg = osszead(szam1, szam2);
-        kiír("%d + %d = %d\n".formatted(szam1,szam2,osszeg));
+        
         
         
         osszeg=osszead(1,osszead(2, osszead(3,4)));
         kiír("1+2+3+4="+osszeg+"\n");
-        
-        osszeg=osszead(2, osszead(4, 2));
-        kiír();
+        int a=3, b=3, c=2;
+        osszeg=osszead(a,b);
+        osszeg=osszead(osszeg,c);
+        String s = "%d+%d+%d gyöke:".formatted(a.b.c);
+        double gyok = Math.sqrt(osszeg);
+        kimenet=String.format("%s %.4f\n",s, gyok);
+        kiír(kimenet);
     }
     
     private static int elso10szamOsszege() {
