@@ -14,30 +14,40 @@ public class equlizer {
 
     private static void equlizer1() {
         eq();
-        eq(0, true);
-        eq();
-        eq();
-        eq();
+        eq(8, true);
+        eq(12);
+        eq(true);
+        eq(false);
 
     }
 
     private static void eq() {
-        int db = rnd.nextInt(8);
-        eq(db);
+       
+        eq(false);
     }
 
     private static void eq(int db) {
+        eq(db, false);
+        
 
+    }
+
+    private static void eq(boolean ertekLatszik) {
+        int db = rnd.nextInt(7-3+1)+3;
+        eq(db, ertekLatszik);
+
+    }
+
+    private static void eq(int db, boolean ertekLatszik) {
+        
         String csillag = "*";
         for (int i = 0; i < db; i++) {
-            System.out.println(csillag + "");
+            System.out.print(csillag + "");
+        
+        }
+        if (ertekLatszik){
+            System.out.print(" "+"(" + db + ")");
         }
         System.out.println("");
-          
-         
     }
-    private static void eq(int db, boolean ertekLatszik) {
-        ertekLatszik=true;
-        eq(db);
-    }
-    }
+}
