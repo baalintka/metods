@@ -19,9 +19,9 @@ public class Metodusok {
         int a=3, b=3, c=2;
         osszeg=osszead(a,b);
         osszeg=osszead(osszeg,c);
-         String s = "%d+%d+%d gyöke:".formatted(a.b.c);
+         
         double gyok = Math.sqrt(osszeg);
-        kimenet=String.format("%s %.4f\n",s, gyok);
+        
         kiír(kimenet);
     }
     
