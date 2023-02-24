@@ -14,9 +14,9 @@ public class equlizer {
 
     private static void equlizer1() {
         eq();
-        eq(8);
+        eq(0, true);
         eq();
-        eq(12);
+        eq();
         eq();
 
     }
@@ -26,15 +26,18 @@ public class equlizer {
         eq(db);
     }
 
-    private static void eq(int hossz) {
+    private static void eq(int db) {
 
         String csillag = "*";
-        for (int i = 0; i < hossz; i++) {
+        for (int i = 0; i < db; i++) {
             System.out.println(csillag + "");
         }
         System.out.println("");
           
          
     }
-    
+    private static void eq(int db, boolean ertekLatszik) {
+        ertekLatszik=true;
+        eq(db);
+    }
     }
